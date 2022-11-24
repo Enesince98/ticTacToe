@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class = "game">
-        <section class = "tile-container">
-        <div class = "tile" id = "0" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "1" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "2" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "3" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "4" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "5" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "6" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "7" onclick="handlePlay(this)"></div>
-        <div class = "tile" id = "8" onclick="handlePlay(this)"></div>
-    </section>
-    <div class = "win-message"></div>
-    <button class = "resetter-button" onclick="resetter()">Reset</button>
+    <main class="game">
+      <h1>Player X plays</h1>
+      <section class="tile-container"></section>
+      <div class="win-message"></div>
+      <section class="old-games"></section>
+      <button class="resetter-button" onclick="resetBoard()">Reset</button>
     </main>
-	<script src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
